@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>叫我城南好不好 · 写代码，也写人</title>
+  <meta name="description" content="叫我城南好不好：独立开发者的个人站点。正在做本地优先、全程加密的人物档案工具「知人」，这里记录产品设计、工程取舍与个人思考。">
+  <meta name="theme-color" content="#f4f2ed">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">城</span>
+        <span>叫我城南好不好</span>
+        <small>/ BLOG</small>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="主导航">
+        <a href="index.html" class="is-active">首页</a>
+        <a href="#posts">博客</a>
+        <a href="#about">关于</a>
+        <a href="#links">友链</a>
+        <a href="zhiren/changelog/">更新日志</a>
+        <a href="zhiren/" class="nav-cta">知人</a>
+      </nav>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false" aria-label="打开导航">≡</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- 开场 -->
+    <section class="blog-hero">
+      <div class="container container-narrow">
+        <h1>叫我城南好不好</h1>
+        <p class="lead">写代码，也写人。白天做产品，晚上记录身边的人与事。</p>
+        <p class="lead" style="margin-top: 12px; color: var(--muted);">
+          在做一个本地优先、全程加密的人物档案工具「知人」。这个站点用来放产品说明、
+          工程笔记，以及一些还没想清楚的个人思考。慢慢写，不着急。
+        </p>
+        <div class="status-line">
+          <span class="status-dot" aria-hidden="true"></span>
+          个人博客 · 知人 v1.4.0 · Windows / Android · 数据只保存在本地
+        </div>
+        <div class="hero-links">
+          <a class="text-link" href="#posts">博客列表</a>
+          <span aria-hidden="true">/</span>
+          <a class="text-link" href="zhiren/">产品：知人</a>
+          <span aria-hidden="true">/</span>
+          <a class="text-link" href="zhiren/changelog/">更新日志</a>
+          <span aria-hidden="true">/</span>
+          <a class="text-link" href="zhiren/download/">下载</a>
+          <span aria-hidden="true">/</span>
+          <a class="text-link" href="#about">关于我</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 博客列表（占位） -->
+    <section class="section" id="posts">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Notes</span>
+          <h2 class="section-title">博客</h2>
+          <p class="section-desc">
+            文章还在整理。先放几篇打算写的选题，成文后会按时间倒序更新——不追热点，
+            只写自己真正想清楚的东西。
+          </p>
+        </div>
+
+        <div class="post-list">
+          <article class="post-row is-placeholder">
+            <div class="post-date">2026-11</div>
+            <div class="post-main">
+              <h3 class="post-title">把「人」当作档案来经营：知人的设计起点</h3>
+              <p class="post-excerpt">
+                为什么不做通讯录，也不做社交产品？记下相处的细节，和给人打分，是两件完全不同的事。
+              </p>
+            </div>
+            <span class="post-tag">产品</span>
+          </article>
+
+          <article class="post-row is-placeholder">
+            <div class="post-date">待定</div>
+            <div class="post-main">
+              <h3 class="post-title">本地优先：把数据库加密后放回自己的硬盘</h3>
+              <p class="post-excerpt">
+                一次关于数据主权、SQLCipher、Argon2id 与恢复密钥的实践记录，以及为此付出的可用性代价。
+              </p>
+            </div>
+            <span class="post-tag">工程</span>
+          </article>
+
+          <article class="post-row is-placeholder">
+            <div class="post-date">待定</div>
+            <div class="post-main">
+              <h3 class="post-title">不用服务器的同步：X25519、配对码与一次性的信任</h3>
+              <p class="post-excerpt">
+                局域网直连同步为什么比想象中难：发现、握手、配对码、合并冲突与附件去重。
+              </p>
+            </div>
+            <span class="post-tag">工程</span>
+          </article>
+
+          <article class="post-row is-placeholder">
+            <div class="post-date">待定</div>
+            <div class="post-main">
+              <h3 class="post-title">人品分析的边界：用数据理解人，而不是给人打分</h3>
+              <p class="post-excerpt">
+                六维评分、置信度与免责声明背后，是一个更难的问题：我们凭什么评价一个人？
+              </p>
+            </div>
+            <span class="post-tag">思考</span>
+          </article>
+
+          <article class="post-row is-placeholder">
+            <div class="post-date">待定</div>
+            <div class="post-main">
+              <h3 class="post-title">中文人情的记账法：礼物、红包与往来</h3>
+              <p class="post-excerpt">
+                人情不是账本，但记下来会让人更安心。关于金额、心意与「算清楚」的分寸。
+              </p>
+            </div>
+            <span class="post-tag">产品</span>
+          </article>
+
+          <article class="post-row is-placeholder">
+            <div class="post-date">待定</div>
+            <div class="post-main">
+              <h3 class="post-title">一个独立开发者的 2026：工具、耐心与删掉的功能</h3>
+              <p class="post-excerpt">
+                做减法比做加法难。记录这一年砍掉的需求、留下的功能和还没做完的部分。
+              </p>
+            </div>
+            <span class="post-tag">随笔</span>
+          </article>
+        </div>
+
+        <p class="small muted" style="margin-top: 22px;">
+          以上为计划中的选题，发布日期与标题可能调整。想先了解我在做什么，可以看看
+          <a class="text-link" href="zhiren/">知人</a> 的介绍。
+        </p>
+      </div>
+    </section>
+
+    <!-- 关于 -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-block">
+          <div>
+            <span class="eyebrow">About</span>
+            <h3>关于我</h3>
+          </div>
+          <div>
+            <p>
+              我是城南，一个做产品也写代码的普通人。做过几年工具类产品，喜欢安静、
+              耐用、不吵闹的软件——不需要登录，不收集数据，用完就忘了它的存在。
+            </p>
+            <p>
+              「知人」是我在业余时间做的一件事：把人际关系里值得记住的细节记下来，
+              让回忆有据可查，也让自己在评价他人时多一点耐心。它不做社交网络，
+              也没有服务器，数据只属于使用者自己。
+            </p>
+            <p class="muted small" style="margin-top: 16px;">
+              目前不接受商业合作与采访。技术问题、产品建议，或者只是想聊聊，都可以找到我：
+            </p>
+            <div class="contact-inline">
+              <a href="tencent://message/?uin=1709824550&amp;Site=qq&amp;Menu=yes" rel="noopener">QQ：1709824550</a>
+              <a href="http://wpa.qq.com/msgrd?v=1&amp;uin=1709824550&amp;site=qq&amp;menu=yes" rel="noopener">QQ 网页版</a>
+              <a href="mailto:wangyuan3179684781@163.com">邮箱</a>
+              <span class="muted small">公众号「叫我城南好不好」</span>
+            </div>
+            <div class="wechat-card">
+              <img src="assets/img/wechat-qr.jpg" alt="微信公众号「叫我城南好不好」二维码" width="96" height="96" loading="lazy">
+              <div class="wechat-meta">
+                <strong>微信公众号</strong>
+                微信扫一扫关注「叫我城南好不好」。<br>
+                更新说明、产品碎碎念和反馈入口都会发在这里。
+              </div>
+            </div>
+            <div class="btn-group" style="margin-top: 20px;">
+              <a class="btn btn-ghost" href="zhiren/">了解知人</a>
+              <a class="btn btn-ghost" href="zhiren/changelog/">看看更新了什么</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 友链 -->
+    <section class="section" id="links">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Links</span>
+          <h2 class="section-title">友链与常用</h2>
+          <p class="section-desc">一部分是参考与致谢，一部分是我常去的地方。友链暂空，欢迎交换。</p>
+        </div>
+        <div class="links-list">
+          <a class="link-card" href="https://github.com/monicahq/monica" rel="noopener">
+            Monica<span>开源人物关系管理 · 理念起点</span>
+          </a>
+          <a class="link-card" href="https://flutter.dev" rel="noopener">
+            Flutter<span>跨平台框架</span>
+          </a>
+          <a class="link-card" href="https://github.com/k2-fsa/sherpa-onnx" rel="noopener">
+            sherpa-onnx<span>离线语音识别</span>
+          </a>
+          <a class="link-card" href="https://www.sqlcipher.net" rel="noopener">
+            SQLCipher<span>加密 SQLite</span>
+          </a>
+        </div>
+        <p class="small muted" style="margin-top: 18px;">
+          友链交换：希望是个人站点或独立作品，内容长期更新、无广告。来信请附站点地址与一句话介绍。
+        </p>
+      </div>
+    </section>
+
+    <!-- 产品卡片 -->
+    <section class="section">
+      <div class="container">
+        <div class="product-card">
+          <div>
+            <span class="eyebrow">Side Project</span>
+            <h3>知人 · 本地加密的人物档案与人际洞察</h3>
+            <p>
+              记下值得记住的人与事：人物档案、行为记录、日记与语音、人情往来，以及基于本地规则的
+              人品洞察。SQLCipher 全库加密，数据只保存在你自己的设备上；电脑与手机可在同一
+              局域网内直连同步，不经过任何服务器。v1.4.0 新增了 Live 实时语音、AI 人设与数据权限。
+            </p>
+            <div class="btn-group">
+              <a class="btn" href="zhiren/">了解知人</a>
+              <a class="btn btn-ghost" href="zhiren/download/">下载 v1.4.0</a>
+              <a class="btn btn-ghost" href="zhiren/changelog/">更新日志</a>
+            </div>
+          </div>
+          <div class="product-shot">
+            <img src="assets/img/home.jpg" alt="知人桌面端首页：夜间模式的记录与快捷操作" width="800" height="533" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">叫我城南好不好</div>
+          <p class="footer-desc">
+            写代码，也写人。这个站点没有统计脚本、没有广告，也不加载任何外部 CDN。
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>站点</h4>
+          <a href="index.html">首页</a>
+          <a href="#posts">博客</a>
+          <a href="#about">关于</a>
+          <a href="#links">友链</a>
+        </div>
+        <div class="footer-col">
+          <h4>项目</h4>
+          <a href="zhiren/">知人</a>
+          <a href="zhiren/download/">下载</a>
+          <a href="zhiren/changelog/">更新日志</a>
+          <a href="zhiren/download/#history">版本历史</a>
+          <a href="https://github.com/wy0922/zhiren" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <span class="label">反馈与联系</span>
+        <a href="tencent://message/?uin=1709824550&amp;Site=qq&amp;Menu=yes" rel="noopener">QQ 在线聊：1709824550</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="http://wpa.qq.com/msgrd?v=1&amp;uin=1709824550&amp;site=qq&amp;menu=yes" rel="noopener">QQ 网页版（备用）</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="mailto:wangyuan3179684781@163.com">wangyuan3179684781@163.com</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="wechat">公众号：叫我城南好不好</span>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> 叫我城南好不好</span>
+        <span>数据属于使用者 · 请勿将本工具用于公开评价他人</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/site.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>知人 v1.4.0 · 本地加密的人物档案与人际洞察</title>
+  <meta name="description" content="知人是一款本地优先、全程加密的人物档案与人际洞察工具。记下值得记住的人与事：人物档案、行为记录、日记语音、人情往来与本地洞察；SQLCipher 全库加密，Windows 与 Android 局域网直连同步，不经过任何服务器。">
+  <meta name="theme-color" content="#f4f2ed">
+  <link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../index.html">
+        <span class="brand-mark" aria-hidden="true">城</span>
+        <span>叫我城南好不好</span>
+        <small>/ 知人</small>
+      </a>
+      <nav class="nav" id="site-nav" aria-label="主导航">
+        <a href="../index.html">博客</a>
+        <a href="index.html" class="is-active">产品</a>
+        <a href="changelog/">更新日志</a>
+        <a href="#screens">界面</a>
+        <a href="#security">隐私</a>
+        <a href="download/" class="nav-cta">下载</a>
+      </nav>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-controls="site-nav" aria-expanded="false" aria-label="打开导航">≡</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">本地优先 · 全程加密 · 无需服务器</span>
+          <h1 class="hero-title">记住那些<br><span class="accent">值得记住的人</span></h1>
+          <p class="hero-lead">
+            有些细节值得记下来：谁在你难受的时候问过一句，谁答应的事真的做到了，
+            谁让你一次次失望。知人把这些小事存好，等你想不清楚一个人时，翻出来慢慢看。
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="download/">下载 Windows 版</a>
+            <a class="btn btn-ghost" href="download/">下载 Android 版</a>
+            <a class="btn btn-ghost" href="changelog/">v1.4.0 更新了什么</a>
+          </div>
+          <div class="hero-meta">
+            <span>v1.4.0</span>
+            <span class="dot" aria-hidden="true">/</span>
+            <span>2026-11-01 更新</span>
+            <span class="dot" aria-hidden="true">/</span>
+            <span>Windows 10+ · Android 8+</span>
+            <span class="dot" aria-hidden="true">/</span>
+            <span>无需注册 · 无服务器 · 不采集数据</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="browser-frame">
+            <div class="browser-bar" aria-hidden="true">
+              <i></i><i></i><i></i><span>知人 · 首页</span>
+            </div>
+            <img src="../assets/img/home.jpg" alt="知人桌面端首页截图：夜间界面中的最近互动、快捷操作与日志" width="800" height="533" fetchpriority="high">
+          </div>
+          <p class="hero-note">桌面端 · 深色 Telegram 风 · 所有内容仅本机可见</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- v1.4.0 更新提示 -->
+    <section class="section section-tight">
+      <div class="container">
+        <div class="notice">
+          <strong>刚发布的 v1.4.0：</strong>Live 实时语音通话、给 AI 起名字和人设、逐项数据权限、
+          聚光灯新手引导、存储清理、应用内更新日志与反馈入口，Windows 安装包也一并更新了。
+          <a class="text-link" href="changelog/">看看这次都改了什么</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 定位 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Why</span>
+          <h2 class="section-title">记录，而不是评判</h2>
+          <p class="section-desc">
+            大多数社交产品在收集你的关系，知人只帮你把关系看清楚一点。它不做通讯录，
+            不做社交网络，也不上传任何内容。
+          </p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="feature-index">01 / 记录</div>
+            <h3 class="feature-title">把「人」当作档案来经营</h3>
+            <p class="feature-desc">
+              人物档案、行为记录、日记、人情往来、重要日子，都在一个地方。
+              记一次「他帮我改完了方案」，比记住一个模糊的好感更有用。
+            </p>
+          </div>
+          <div class="card">
+            <div class="feature-index">02 / 本地</div>
+            <h3 class="feature-title">数据只存在你自己的设备上</h3>
+            <p class="feature-desc">
+              没有账号、没有服务器、没有云端同步。数据库用 SQLCipher 整库加密，
+              离开这台设备，文件只是一堆无法识别的字节。
+            </p>
+          </div>
+          <div class="card">
+            <div class="feature-index">03 / 参考</div>
+            <h3 class="feature-title">洞察是参考，不是结论</h3>
+            <p class="feature-desc">
+              六维画像与「值不值得深交」全部基于你的本地记录与规则推断，
+              附置信度、依据事件与免责声明。它提醒你多看几眼，而不替你下判断。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 核心功能 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Features</span>
+          <h2 class="section-title">核心功能</h2>
+          <p class="section-desc">从一笔记录开始，慢慢积累成一份只属于你的关系档案。</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="feature-index">01</div>
+            <h3 class="feature-title">人物档案</h3>
+            <p class="feature-desc">姓名昵称、关系、亲密度、标签、生日、相识经历，以及国内常用社交平台。</p>
+            <ul class="feature-list">
+              <li>微信 / QQ / 小红书 / 抖音 / B站 / 微博 / 知乎</li>
+              <li>生日支持未知年份与农历标记</li>
+              <li>照片、宠物、待办、重要日子关联</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="feature-index">02</div>
+            <h3 class="feature-title">行为记录与时间线</h3>
+            <p class="feature-desc">记住「什么时间、发生了什么、你的感受如何」，好坏、权重、方向都记下来。</p>
+            <ul class="feature-list">
+              <li>按人 / 全局时间线，会话流式浏览</li>
+              <li>六维画像：可靠、互惠、边界、情绪、真诚、支持</li>
+              <li>趋势、正负事件摘录与置信度</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="feature-index">03</div>
+            <h3 class="feature-title">日记 · 语音 · 智能提取</h3>
+            <p class="feature-desc">写日记，也可以直接说。离线中文模型断网可用，人名同音字自动纠正。</p>
+            <ul class="feature-list">
+              <li>日历回看、「往日今日」、全文搜索</li>
+              <li>自动识别「谁做了什么」生成待确认提案</li>
+              <li>可配置在线转写作为增强</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="feature-index">04</div>
+            <h3 class="feature-title">人情往来与提醒</h3>
+            <p class="feature-desc">礼物、红包、请客、借款与归还，按人汇总净往来，不让心意变成糊涂账。</p>
+            <ul class="feature-list">
+              <li>金额精确到分，可标记是否已还 / 回礼</li>
+              <li>生日、纪念日、自定义日子提前提醒</li>
+              <li>与人物关联的待办清单</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="feature-index">05</div>
+            <h3 class="feature-title">AI 聊天「知」与六爻问卦</h3>
+            <p class="feature-desc">能打字，也能像打电话一样聊。AI 默认关闭，开不开、能读什么都由你决定。</p>
+            <ul class="feature-list">
+              <li>Live 实时语音：边听边答，字幕同步</li>
+              <li>可以给 AI 起名字、设人设、逐项数据权限</li>
+              <li>六爻起卦、装卦与解卦完全本地计算</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="feature-index">06</div>
+            <h3 class="feature-title">安全与同步</h3>
+            <p class="feature-desc">全库加密、隐藏空间、生物识别，以及不经过服务器的局域网直连同步。</p>
+            <ul class="feature-list">
+              <li>SQLCipher + Argon2id 主密钥派生</li>
+              <li>X25519 握手 + ChaCha20-Poly1305 传输</li>
+              <li>记录级合并、删除墓碑、附件去重补传</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 截图 -->
+    <section class="section" id="screens">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Screens</span>
+          <h2 class="section-title">界面一览</h2>
+          <p class="section-desc">克制、安静的深色界面。没有浮夸的动效，只有需要的信息。</p>
+        </div>
+        <div class="shots">
+          <figure class="shot">
+            <img src="../assets/img/person.jpg" alt="知人人物档案页：头像、关系标签、快捷操作与档案分区" width="800" height="514" loading="lazy">
+            <figcaption>人物档案 <span class="tag">PROFILE</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="../assets/img/insight.jpg" alt="知人全局洞察页：六维画像、综合分与关键事件" width="800" height="533" loading="lazy">
+            <figcaption>人品洞察 <span class="tag">INSIGHT</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="../assets/img/sync.jpg" alt="知人同步中心：局域网设备、二维码与配对码" width="800" height="533" loading="lazy">
+            <figcaption>局域网同步 <span class="tag">SYNC</span></figcaption>
+          </figure>
+          <figure class="shot">
+            <img src="../assets/img/home.jpg" alt="知人首页：最近互动与快捷入口" width="800" height="533" loading="lazy">
+            <figcaption>首页与最近互动 <span class="tag">HOME</span></figcaption>
+          </figure>
+        </div>
+        <div class="mobile-row is-pair">
+          <figure class="phone">
+            <img src="../assets/img/mobile-home.jpg" alt="知人 Android 首页截图" width="420" height="840" loading="lazy">
+            <figcaption>Android · 首页</figcaption>
+          </figure>
+          <figure class="phone">
+            <img src="../assets/img/mobile-person.jpg" alt="知人 Android 人物档案截图" width="420" height="840" loading="lazy">
+            <figcaption>Android · 人物档案</figcaption>
+          </figure>
+        </div>
+        <p class="small muted center" style="margin-top: 24px;">
+          截图为 v1.4.0 实际界面，演示数据均为虚构。
+        </p>
+      </div>
+    </section>
+
+    <!-- 隐私 -->
+    <section class="section dark-band" id="security">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Privacy &amp; Security</span>
+          <h2 class="section-title">你的数据，不需要交给任何人</h2>
+          <p class="section-desc">
+            知人没有后端服务器。所有内容在写入磁盘前完成加密，同步也只发生在你自己的两台设备之间。
+          </p>
+        </div>
+        <div class="privacy-grid">
+          <div class="privacy-item">
+            <h3>整库加密</h3>
+            <p>SQLCipher 全库加密，数据库文件头为随机字节；在文件里搜索不到姓名与评价原文。</p>
+          </div>
+          <div class="privacy-item">
+            <h3>主密码派生</h3>
+            <p>主密码经 Argon2id 派生密钥后才用于解密，只在本机内存中出现，不落盘、不上传。</p>
+          </div>
+          <div class="privacy-item">
+            <h3>隐藏空间</h3>
+            <p>独立数据库与独立密码，普通模式下完全不会打开。第二个库对第一个库不可见。</p>
+          </div>
+          <div class="privacy-item">
+            <h3>私密评价</h3>
+            <p>负面评价用独立隐私密钥二次加密，查看前必须再次验证，失焦自动遮蔽。</p>
+          </div>
+          <div class="privacy-item">
+            <h3>点对点同步</h3>
+            <p>X25519 临时密钥协商 + 配对码校验 + ChaCha20-Poly1305 传输，不经过任何服务器。</p>
+          </div>
+          <div class="privacy-item">
+            <h3>AI 权限可控</h3>
+            <p>AI 默认关闭。开启后可以逐项决定它能读日记、互动记录还是人物资料，随时收回。</p>
+          </div>
+        </div>
+        <p class="small" style="margin-top: 22px; color: var(--dark-muted);">
+          提示：忘记主密码且丢失恢复密钥时，数据无法恢复——这是加密设计的一部分。
+          建议定期在「设置 → 数据」导出加密备份。
+        </p>
+      </div>
+    </section>
+
+    <!-- 系统要求 -->
+    <section class="section" id="requirements">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Requirements</span>
+          <h2 class="section-title">系统要求</h2>
+        </div>
+        <table class="spec-table">
+          <tbody>
+            <tr>
+              <th scope="row">Windows</th>
+              <td>Windows 10 / 11（64 位）；约 300 MB 可用磁盘空间；首次运行需选择数据目录（建议非系统盘）。</td>
+            </tr>
+            <tr>
+              <th scope="row">Android</th>
+              <td>Android 8.0 及以上；arm64 / arm 设备；约 400 MB 可用空间；安装时需允许「安装未知应用」。</td>
+            </tr>
+            <tr>
+              <th scope="row">局域网同步</th>
+              <td>两台设备连接同一 Wi-Fi；Windows 首次使用时需在防火墙提示中允许「专用网络」；路由器开启 AP 隔离时可用手动 IP 连接。</td>
+            </tr>
+            <tr>
+              <th scope="row">离线语音</th>
+              <td>需在「设置 → 语音与 AI」下载离线模型（约 71 MB 或 488 MB），断网可用；未下载时可降级为在线转写或纯文字。</td>
+            </tr>
+            <tr>
+              <th scope="row">AI 增强 / Live 语音</th>
+              <td>可选，默认关闭。需自行填写 OpenAI 兼容接口的 baseUrl、API Key 与模型名；Live 语音还需要麦克风权限与系统朗读（TTS）引擎。</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 下载 CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-card">
+          <div>
+            <span class="eyebrow">Download</span>
+            <h2>下载知人 v1.4.0</h2>
+            <p>Windows 安装版 / 绿色版、Android APK。含文件大小与 SHA256 校验值。</p>
+          </div>
+          <div class="btn-group">
+            <a class="btn btn-primary" href="download/">前往下载页</a>
+            <a class="btn btn-ghost" href="changelog/">更新日志</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ 摘要 -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">FAQ</span>
+          <h2 class="section-title">常见问题</h2>
+          <p class="section-desc">更多问题（下载速度、安装、数据迁移、同步排查）见下载页。</p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>真的完全不上传数据吗？</summary>
+            <div class="answer">
+              是的。知人没有服务器与账号体系。只有三种情况会联网：你主动开启在线语音识别、
+              开启 AI 增强（或 Live 语音）、或在局域网内进行设备同步。前两者会把对应内容发送到
+              你自行配置的服务，同步则只在两台设备之间点对点加密传输。
+            </div>
+          </details>
+          <details>
+            <summary>换电脑或换手机，数据怎么迁移？</summary>
+            <div class="answer">
+              两种方式：在同一局域网内用「同步中心」直连同步；或在「设置 → 数据」导出
+              <code>.zhiren</code> 加密备份，在新设备导入。备份文件使用独立口令加密，可跨设备还原。
+            </div>
+          </details>
+          <details>
+            <summary>忘记主密码怎么办？</summary>
+            <div class="answer">
+              初始化时会生成 24 位恢复密钥。用它可以重置主密码；如果恢复密钥也丢失，
+              由于数据是本地端到端加密的，任何人都无法恢复——包括开发者本人。
+            </div>
+          </details>
+          <details>
+            <summary>遇到问题，或者想提建议？</summary>
+            <div class="answer">
+              可以直接加 QQ：<a class="text-link" href="tencent://message/?uin=1709824550&amp;Site=qq&amp;Menu=yes" rel="noopener">1709824550</a>
+              （没装 QQ 可以用
+              <a class="text-link" href="http://wpa.qq.com/msgrd?v=1&amp;uin=1709824550&amp;site=qq&amp;menu=yes" rel="noopener">网页版</a>），
+              或发邮件到 <a class="text-link" href="mailto:wangyuan3179684781@163.com">wangyuan3179684781@163.com</a>，
+              也可以在公众号「叫我城南好不好」留言。
+              <div class="wechat-card">
+                <img src="../assets/img/wechat-qr.jpg" alt="微信公众号「叫我城南好不好」二维码" width="96" height="96" loading="lazy">
+                <div class="wechat-meta">
+                  <strong>微信公众号</strong>
+                  微信扫一扫关注「叫我城南好不好」，后台留言也能找到我。
+                </div>
+              </div>
+            </div>
+          </details>
+        </div>
+        <p style="margin-top: 22px;">
+          <a class="text-link" href="download/#faq">前往下载页查看更多问题</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand">知人</div>
+          <p class="footer-desc">
+            本地优先、全程加密的人物档案与人际洞察工具。Windows 与 Android 双端离线可用。
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>产品</h4>
+          <a href="index.html">产品介绍</a>
+          <a href="download/">下载</a>
+          <a href="changelog/">更新日志</a>
+          <a href="download/#faq">常见问题</a>
+        </div>
+        <div class="footer-col">
+          <h4>相关</h4>
+          <a href="../index.html">作者博客</a>
+          <a href="https://github.com/wy0922/zhiren" rel="noopener">GitHub</a>
+          <a href="download/#privacy">隐私说明</a>
+          <a href="../index.html#links">致谢</a>
+        </div>
+      </div>
+      <div class="footer-contact">
+        <span class="label">反馈与联系</span>
+        <a href="tencent://message/?uin=1709824550&amp;Site=qq&amp;Menu=yes" rel="noopener">QQ 在线聊：1709824550</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="http://wpa.qq.com/msgrd?v=1&amp;uin=1709824550&amp;site=qq&amp;menu=yes" rel="noopener">QQ 网页版（备用）</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="mailto:wangyuan3179684781@163.com">wangyuan3179684781@163.com</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="wechat">公众号：叫我城南好不好</span>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2026</span> 叫我城南好不好</span>
+        <span>知人不是社交产品 · 请勿将其用于公开评价他人</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
