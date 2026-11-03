@@ -5,7 +5,7 @@
   "channel": "stable",
   "released_at": "2026-11-02",
   "release_url": "https://github.com/wy0922/zhiren/releases/tag/v1.4.0",
-  "download_page": "https://example.com/zhiren/download/",
+  "download_page": "https://zhiren-9je.pages.dev/zhiren/download/",
   "notes": [
     "AI 安全守护：识别自残、自杀与严重暴力风险，停下来劝阻并给出求助电话，绝不提供方法；不当回复会被拦截。",
     "使用前必须先阅读并同意用户协议，不同意不能使用；同意后不再弹出。",
@@ -32,8 +32,8 @@
   },
   "android_apk_meta": {
     "filename": "zhiren-android-1.4.0-20261102.apk",
-    "size": 201946724,
-    "sha256": "e2976582a23988aea446e64a709a03a5c48e0a80f64949b8da3867b19b47299b"
+    "size": 201963020,
+    "sha256": "2c63b169b459ea07883aea99089e860b4e1d6eef3da93363a2f38146412649e3"
   },
   "requirements": {
     "windows": "Windows 10/11（64 位），约 300 MB 可用空间",
